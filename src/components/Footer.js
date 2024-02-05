@@ -11,6 +11,7 @@ export default function Footer() {
             © 2024 SPACE EAGLE, INDIA
           </span>
         </div>
+        {/* hello  */}
        
           <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
             <li class="ms-3">
