@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+import Navbar from './components/Navbar';
 import './App.css';
-
+import Forms from './components/Forms';
+import Footer from './components/Footer';
+import { useState } from 'react';
 function App() {
+  const [mode,setmode] = useState("light");
+  const toggleMode = ()=>{
+    var textElement1 = document.getElementById("lable-text");
+    var textElement2 = document.getElementById("output-text");
+  
+
+    if(mode === 'light'){
+      setmode('dark')
+      document.body.style.backgroundColor = `#066163`;
+
+      textElement1.style.color = "white";
+      textElement2.style.color = "white";
+
+
+    }else{
+      setmode('light')
+      document.body.style.backgroundColor = '#F3FDE8';
+
+      textElement1.style.color = "black";
+      textElement2.style.color = "black";
+   
+    }
+
+  }
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+    <Navbar toggleMode={toggleMode} mode={mode} />
+    <Forms />
+    <Footer/>
+    </>
   );
 }
 

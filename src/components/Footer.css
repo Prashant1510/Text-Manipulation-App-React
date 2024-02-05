@@ -1,0 +1,9 @@
+#footer{
+    padding-left: 50px;
+    padding-right: 50px;
+
+}
+.footer{
+    border-top: 1px solid rgb(143, 143, 143);
+    border-radius: 15px;
+}

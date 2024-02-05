@@ -1,0 +1,56 @@
+.text-area:focus{
+    box-shadow: none;
+}
+.form-label{
+    font-size: 20px;
+    font-weight: 600;
+   
+}
+.output{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 10px;
+}
+.output-text{
+    height: 200px;
+    width: 100%;
+    border: 1px solid rgb(59, 253, 42);
+    border-radius: 10px;
+    background-color: white;
+    margin-bottom: 25px;
+}
+.form-textarea {
+    border-radius: 10px;
+    border-color: rgb(15, 207, 255);
+}
+textarea{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.all-buttons{
+    display: grid;
+    /* flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly; */
+    grid-template-columns: repeat(6, 1fr);
+}
+.button-effect{
+    background: #10a19d;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    border: 1px solid transparent;
+    transition: .5s ease;
+}
+.button-effect:hover{
+    background: white;
+    color:#10a19d;
+    border-color: #10a19d;
+}
+
+@media (max-width: 540px) {
+    .all-buttons{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+  }
